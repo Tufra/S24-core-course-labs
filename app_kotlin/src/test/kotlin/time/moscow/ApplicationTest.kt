@@ -29,7 +29,6 @@ class ApplicationTest {
             application {
                 configureRouting()
             }
-
             val firstReq = client.get("/")
             sleep(3000)
             val secondReq = client.get("/")

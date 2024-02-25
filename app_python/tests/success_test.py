@@ -23,6 +23,7 @@ def test_content_change(fixture):
     """
     A test for changing body
     """
+    
     first_request, first_response = fixture.test_client.get()
     sleep(1)
     second_request, second_response = fixture.test_client.get()
